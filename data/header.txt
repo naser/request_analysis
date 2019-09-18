@@ -1,1 +1,12 @@
-REQUEST_ID, UNKNOWN: 0, SYSTEMCALL: 0, USERMODE: 0, BLOCKED_IO: 0, BLOCKED_CPU: 0, BLOCKED_WAITKERNEL: 0,                BLOCKED_WAITPROCESS: 0, BLOCKED_FOR_FUTEX: 0, BLOCKED_CPU_FUTEX: 0, TRASH: 0, REQUEST_DURATION
+The first field is Request ID which is not a part of the sequence. Sequence in fact stzarts from the second position. The last character is always a $ which is not a part of sequence. It is just a delimiter!
+The meaning of numbers, however are written in the following
+0: UNKNOWN, 
+1: SYSTEMCALL, 
+2: USERMODE, 
+3: BLOCKED_IO, 
+4: BLOCKED_CPU, 
+5: BLOCKED_WAITKERNEL,
+6: BLOCKED_WAITPROCESS, 
+7: BLOCKED_FOR_FUTEX, 
+8: BLOCKED_CPU_FUTEX, 
+9: TRASH
